@@ -4,11 +4,11 @@
 a=input()
 print(a.count(" ") +1)
 
-
+#
 
 print(input().count(' ')+1)
 
-
+#
 
 s=input().split()
 i=1
@@ -16,17 +16,11 @@ while i<len(s):
     i+=1
 print(i)
 
+#
 
 print(len(input().split))
 
-a=input()
-print(a.count(" ")+1)
-
-
-
-print(input().count(' ')+1)
-
-
+#
 
 a = input()
 i = 0
