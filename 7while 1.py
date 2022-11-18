@@ -15,3 +15,6 @@ i=1
 while i<len(s):
     i+=1
 print(i)
+
+
+print(len(input().split))
