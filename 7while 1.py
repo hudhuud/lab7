@@ -18,3 +18,23 @@ print(i)
 
 
 print(len(input().split))
+
+a=input()
+print(a.count(" ")+1)
+
+
+
+print(input().count(' ')+1)
+
+
+
+a = input()
+i = 0
+k = 0
+while i < len(a):
+    if a[i] == ' ':
+        k += 1
+    elif a[i] == ' ' and a[i - 1] == ' ':
+        k += 1
+    i += 1
+print(k)
