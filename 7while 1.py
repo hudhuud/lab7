@@ -24,7 +24,7 @@ print(len(input().split))
 
 a = input()
 i = 0
-k = 0
+k = 1
 while i < len(a):
     if a[i] == ' ':
         k += 1
