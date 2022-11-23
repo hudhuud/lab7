@@ -1,0 +1,39 @@
+#Шарапова Ангира 21 ис 21
+#Задача «Обращение фрагмента». Дана строка, в которой буква h встречается как минимум два раза. Разверните последовательность символов, заключенную между первым и последним появлением буквы h, в противоположном порядке.
+
+a = input()
+b = a.find('h')
+c = a.rfind('h')
+print(a[:b] + a[c:b:-1] + a[c:])
+
+#
+#метод через while. //это кошмар
+s = str(input())
+h_first = -1 
+h_last = -1
+otv = ' '
+i = 0
+k = 0
+while i < len(s):
+    if s[i] == 'h' and h_first ==-1:
+        h_first = i
+        break
+    i+=1
+i=len(s)-1
+while i >= 0:
+    if s[i] == 'h' and h_last ==-1:
+        h_last = i
+        break
+    i-=1
+while k<h_first:
+    otv+=str(s[k])
+    k+=1
+k = h_last
+while k>=h_first:
+    otv+=str(s[k])
+    k-=1
+k = h_last+1
+while k<len(s):
+    otv+=s[k]
+    k+=1
+print(otv)
