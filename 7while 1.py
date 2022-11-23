@@ -21,6 +21,7 @@ print(i)
 print(len(input().split))
 
 #
+#метод через while
 
 a = input()
 i = 0
